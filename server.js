@@ -9,6 +9,10 @@ app.get("/demo", async (req,res)=>{
     res.status(200).json({message:"app is running"})
 })
 
+app.get("/test", async (req,res)=>{
+    res.status(200).json({message:"app is working fine"})
+})
+
 app.listen(process.env.PORT || 5050, ()=>{
     console.log("server is running")
 })
